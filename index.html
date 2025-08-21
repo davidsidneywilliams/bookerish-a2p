@@ -21,6 +21,7 @@
             align-items: center;
             justify-content: center;
             padding: 20px;
+            margin: 0;
         }
         
         .container {
@@ -31,6 +32,7 @@
             max-width: 600px;
             width: 100%;
             text-align: center;
+            margin: 0 auto;
         }
         
         .logo {
@@ -179,6 +181,22 @@
             font-size: 0.9rem;
             margin-top: 5px;
             display: none;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 20px;
+                margin: 20px;
+                max-width: calc(100% - 40px);
+            }
+            
+            .logo {
+                font-size: 2rem;
+            }
+            
+            .tagline {
+                font-size: 1rem;
+            }
         }
     </style>
 </head>
